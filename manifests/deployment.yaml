@@ -12,6 +12,8 @@ spec:
       labels:
         app: my-app
     spec:
+      imagePullSecrets:
+      - name: jfrog-docker-secret
       containers:
       - name: my-app-container
         # Reference your JFrog-hosted Docker image here
