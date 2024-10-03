@@ -18,6 +18,7 @@ spec:
       containers:
       - name: my-app-container
         # Reference your JFrog-hosted Docker image here
-        image: trialwekr6h.jfrog.io/testing-docker/my-testing-image:latest
+        #image: trialwekr6h.jfrog.io/testing-docker/my-testing-image:latest
+        image: nginx:latest
         ports:
         - containerPort: 8080
