@@ -12,11 +12,12 @@ spec:
       labels:
         app: my-app
     spec:
+      serviceAccountName: my-app-sa
       imagePullSecrets:
       - name: jfrog-docker-secret
       containers:
       - name: my-app-container
         # Reference your JFrog-hosted Docker image here
-        image: trialwekr6h.jfrog.io/testing-docker/my-testing-image:1.0.0
+        image: trialwekr6h.jfrog.io/testing-docker/my-testing-image:latest
         ports:
         - containerPort: 8080
